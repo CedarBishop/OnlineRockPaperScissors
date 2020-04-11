@@ -118,7 +118,7 @@ def main():
             else:
                 text = font.render("You Lost...", 1, (255, 0, 0))
 
-            win.blit(text, (width/2 - text.get_width()/2, height/2 - text.get_height()/2))
+            win.blit(text, (width/2 - text.get_width()/2, height/8))
             pygame.display.update()
             pygame.time.delay(2000)
 
@@ -149,7 +149,7 @@ def menu_screen():
         win.fill((128, 128, 128))
         font = pygame.font.SysFont("comicsans", 60)
         text = font.render("Click to Play!", 1, (255,0,0))
-        win.blit(text, (100,200))
+        win.blit(text, (200, 200))
         pygame.display.update()
 
         for event in pygame.event.get():
